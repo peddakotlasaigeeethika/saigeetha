@@ -1,0 +1,53 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    background: #B5D8FF;
+    height: 150vh;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+
+.main {
+    height: 90%;
+    background-color: #5C9CE5;
+    border-radius: 50px;
+    position: relative;
+    width:100%;
+
+}
+
+.city {
+    width: 20%;
+    height: 35%;
+    bottom: 1%;
+    left: 2%;
+    position: absolute;
+}
+
+.sun {
+    width: 15%;
+    height: 10%;
+    left: 15%;
+    bottom: 40%;
+
+
+    position: absolute;
+}
+
+
+
+.sub-main {
+    margin-left: 30%;
+    height: 100%;
+    background: #E4F1FF;
+    border-radius: 50px;
+    
+
+}
+
+meter::-webkit-meter-optimum-value {
+    background: #5C9CE5;
+}
+

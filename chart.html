@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  #speedometer .wrapper {
+    width: 100px;
+    height: 150px;
+   
+    border-top-left-radius: 150;
+      border-top-right-radius: 360px;
+    overflow: hidden;
+    position: relative;
+}
+
+#speedometer .wrapper .indicator-wrapper {
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    width: 80%;
+    height: 80%;
+    border-top-left-radius: 360px;
+    border-top-right-radius: 360px;
+    background-color: #ffffff;
+    z-index: 400;
+}
+
+#speedometer .wrapper .bar {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-origin: bottom center;
+}
+
+#speedometer .wrapper .bar-1 {
+    top: 0;
+    left: 0;
+    z-index: 200;
+    transform: rotate(-140deg);
+    /* background-color: rgb(114, 114, 238); */
+    background-color: green;
+}
+
+#speedometer .wrapper .bar-2 {
+    top: 0;
+    right: 0;
+    z-index: 150;
+    transform: rotate(-90deg);
+    /* background-color: rgb(69, 69, 204); */
+    background-color: yellow;
+}
+
+#speedometer .wrapper .bar-3 {
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transform: rotate(-40deg);
+    /* background-color: rgb(40, 40, 180); */
+    background-color: purple;
+}
+
+#speedometer .wrapper .bar-4 {
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transform: rotate(30deg);
+    /* background-color: rgb(15, 15, 167); */
+    background-color: red;}
+</style>
+<body>
+  <div id="speedometer">
+    <div class="wrapper">
+        <div class="indicator-wrapper">
+            <div class="indicator-wrapper-inner">
+                <div id="indicator"></div>
+            </div>
+        </div>
+
+        <div class="bar bar-1"></div>
+        <div class="bar bar-2"></div>
+        <div class="bar bar-3"></div>
+        <div class="bar bar-4"></div>
+    </div>
+</div>
+</body>
+</html>
